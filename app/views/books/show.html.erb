@@ -12,7 +12,7 @@
 
 <p>
   <strong>Image data:</strong>
-  <%= @book.image_data %>
+  <%= image_tag @book.image_url %>
 </p>
 
 <p>
@@ -20,5 +20,5 @@
   <%= @book.rating %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-warning' %>
+<%= link_to 'Back', books_path, class: 'btn btn-success' %>

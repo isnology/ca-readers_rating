@@ -22,8 +22,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :image_data %>
-    <%= form.text_field :image_data, id: :book_image_data %>
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :book_image %>
   </div>
 
   <div class="field">
@@ -32,6 +32,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-warning' %>
   </div>
 <% end %>
